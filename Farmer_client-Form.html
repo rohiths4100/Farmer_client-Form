@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshHarvest | No-JS Order Form</title>
+</head>
+<body>
+
+    <header>
+        <h1>🌱 FreshHarvest Weekly Order</h1>
+        <p>Pre-order your local produce. Payment due at pickup.</p>
+    </header>
+
+    <form action="/process_order.php" method="POST">
+        
+        <fieldset>
+            <legend>Who are you?</legend>
+            
+            <div>
+                <label for="fullName">Full Name <span>*</span></label>
+                <input type="text" id="fullName" name="fullName" required placeholder="Jane Doe" autocomplete="name">
+            </div>
+            <br>
+
+            <div>
+                <label for="email">Email Address <span>*</span></label>
+                <input type="email" id="email" name="email" required placeholder="jane@example.com" autocomplete="email">
+            </div>
+            <br>
+
+            <div>
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" title="Format: 123-456-7890">
+                <p>Format: 123-456-7890</p>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Your Basket</legend>
+            <p>Enter the quantity you wish to reserve.</p>
+
+            <div>
+                <div>
+                    <label for="tomatoes">Heirloom Tomatoes</label>
+                    <small>$4.00 / lb</small>
+                </div>
+                <input type="number" id="tomatoes" name="items[tomatoes]" min="0" max="20" step="0.5" placeholder="0">
+            </div>
+            <br>
+
+            <div>
+                <div>
+                    <label for="corn">Sweet Corn</label>
+                    <small>$0.75 / ear</small>
+                </div>
+                <input type="number" id="corn" name="items[corn]" min="0" max="50" step="1" placeholder="0">
+            </div>
+            <br>
+
+            <div>
+                <div>
+                    <label for="honey">Local Raw Honey</label>
+                    <small>$12.00 / jar</small>
+                </div>
+                <input type="number" id="honey" name="items[honey]" min="0" max="10" step="1" placeholder="0">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Pickup Details</legend>
+            
+            <div>
+                <label for="location">Pickup Location <span>*</span></label>
+                <select id="location" name="location" required>
+                    <option value="" disabled selected>-- Select Location --</option>
+                    <option value="downtown">Downtown Market (Sat 8am-12pm)</option>
+                    <option value="farm">The Farm (Sat 9am-2pm)</option>
+                </select>
+            </div>
+            <br>
+
+            <div>
+                <label>Preferred Time Slot:</label><br>
+                <input type="radio" id="slot1" name="timeSlot" value="morning" checked>
+                <label for="slot1">Morning</label>
+                
+                <input type="radio" id="slot2" name="timeSlot" value="afternoon">
+                <label for="slot2">Afternoon</label>
+            </div>
+        </fieldset>
+
+        <div>
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">I understand that the final price will be calculated at the register based on exact weight.</label>
+        </div>
+        <br>
+
+        <button type="submit">Place Order</button>
+    </form>
+
+</body>
+</html>
