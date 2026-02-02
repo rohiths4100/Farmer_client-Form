@@ -1,17 +1,33 @@
-body{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(135deg, #9be15d, #00e3ae);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Segoe UI", Arial, sans-serif;
 }
+
 .login{
     width: 500px;
     height: 500px;
     border: solid 0.5px rgb(0, 0, 0);
-    margin-left: 450px;
+    border-radius: 10px;
     margin-top: 80px;
     padding-top: 100px;
-    background-color: rgb(184, 223, 224);
+    background-color: #ffffff;
 }
 .lable{
     font-size:15px;
+}
+.login-box {
+  width: 380px;
+  border-radius: 5px;
+  box-shadow: 0 15px 35px rgba(89, 168, 79, 0.15);
+  transition: background-color ;
+}
+.login-box button:hover{
+    background-color: #7e9c64;
 }
 .inputs{
     width: 500px;
@@ -26,7 +42,4 @@ body{
     margin-bottom: 10px;
     width: 300px;
     height: 25px;
-}
-body{
-    background-color: rosybrown;
 }
