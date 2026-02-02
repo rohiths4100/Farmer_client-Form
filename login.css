@@ -1,0 +1,30 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.login{
+    width: 500px;
+    height: 500px;
+    border: solid 0.5px rgb(0, 0, 0);
+    margin-left: 450px;
+    margin-top: 80px;
+    padding-top: 100px;
+    background-color: rgb(184, 223, 224);
+}
+.lable{
+    font-size:15px;
+}
+.inputs{
+    width: 500px;
+    height: 350px;
+    margin-left:100px;
+    text-align: left;
+}
+.box{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 300px;
+    height: 25px;
+}
+body{
+    background-color: rosybrown;
+}
