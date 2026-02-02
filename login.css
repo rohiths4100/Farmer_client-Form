@@ -20,6 +20,8 @@ body{
     text-align: left;
 }
 .box{
+    border-radius: 5PX;
+    border-width: 1px;
     margin-top: 10px;
     margin-bottom: 10px;
     width: 300px;
