@@ -1,29 +1,19 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>
-            Farmer-client/Login page
-        </title>
-        <link rel="stylesheet" href="login.css">
-    </head>
+<html lang="en">
+<head>
+    <title>Farmer Client | Login</title>
+    <link rel="stylesheet" href="login.css">
     <script>
-    function myFunction() {
-        var x = document.getElementById("myInput");
-        if (x.type === "password") {
-          x.type = "text";
-        } else {
-          x.type = "password"
+        function togglePassword() {
+            const x = document.getElementById("password");
+            x.type = x.type === "password" ? "text" : "password";
         }
-      }
-    function my_func(){
-        var y= document.getElementById("");
-    }
     </script>
     <body style="text-align:center;">
         <div class="login">
             <form class="form">
                 <div class="inputs">
-                <lable class="lable">Enter your email or User name</lable><br>
+                <lable class="lable">Enter your eamil or User name</lable><br>
                 <input type="text" class="box" placeholder="abc@gmail.com"><br>
 
                 <lable class="lable"> Enter your password:</lable><br>
@@ -31,9 +21,13 @@
                 <input type="checkbox" onclick="myFunction()" style="margin: 0px 5px 10px 180px;">Show Password   <br>         
                 <button class="login-box" style="margin: 10px 100px ;width:100px; height:30px; color: rgb(0, 0, 0); background-color: #2e7d32;">login</button>
                 </div>
-                <p>Don`t you have account? <a href="">click Here</a> to sign-up</p>
-            </form>
-        </div>
-    </body>
-
+                <button type="submit" class="login-box">Login</button>
+                <p class="signup">
+                    Don’t have an account?
+                    <a href="#">Click here</a> to sign up
+                </p>
+            </div>
+        </form>
+    </div>
+</body>
 </html>
