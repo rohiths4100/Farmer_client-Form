@@ -9,17 +9,19 @@
             x.type = x.type === "password" ? "text" : "password";
         }
     </script>
-    <body style="text-align:center;">
-        <div class="login">
-            <form class="form">
-                <div class="inputs">
-                <lable class="lable">Enter your eamil or User name</lable><br>
-                <input type="text" class="box" placeholder="abc@gmail.com"><br>
+</head>
 
-                <lable class="lable"> Enter your password:</lable><br>
-                <input type="password" class="box" id="myInput" style="margin-bottom: 5px;"><br>
-                <input type="checkbox" onclick="myFunction()" style="margin: 0px 5px 10px 180px;">Show Password   <br>         
-                <button class="login-box" style="margin: 10px 100px ;width:100px; height:30px; color: rgb(0, 0, 0); background-color: #2e7d32;">login</button>
+<body>
+    <div class="login">
+        <h2 style="text-align:center; color:#2e7d32; margin-bottom:30px;">Farmer Client Login</h2>
+        <form class="form">
+            <div class="inputs">
+                <label class="label">Email or Username</label><br>
+                <input type="text" class="box" placeholder="abc@gmail.com" required><br>
+                <label class="label">Password</label><br>
+                <input type="password" class="box" id="password" required><br>
+                <div class="show-password">
+                    <input type="checkbox" onclick="togglePassword()"> Show Password
                 </div>
                 <button type="submit" class="login-box">Login</button>
                 <p class="signup">
