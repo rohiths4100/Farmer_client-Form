@@ -1,0 +1,19 @@
+body{
+    margin:0;
+    background-image: url("farm.png");
+    display:flex;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+.sign-up{
+    background-color: aliceblue;
+    width: 420px;
+    padding: 60px 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+

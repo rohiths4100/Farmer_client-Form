@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Farmer Client | Login</title>
+    <link rel="stylesheet" href="login.css">
+    <script>
+        function togglePassword() {
+            const x = document.getElementById("password");
+            x.type = x.type === "password" ? "text" : "password";
+        }
+    </script>
+</head>
+
+<body>
+    <div class="login">
+        <h2 style="text-align:center; color:#2e7d32; margin-bottom:30px;">Farmer Client Login</h2>
+        <form class="form">
+            <div class="inputs">
+                <label class="label">Email or Username</label><br>
+                <input type="email" class="box" placeholder="abc@gmail.com" required><br>
+                <label class="label">Password</label><br>
+                <input type="password" class="box" id="password" required><br>
+                <div class="show-password">
+                    <input type="checkbox" onclick="togglePassword()"> Show Password
+                </div>
+                <button type="submit" class="login-box">Login</button>
+                <p class="signup">
+                    Don’t have an account?
+                    <a href="sign_up.html">Click here</a> to sign up
+                </p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
