@@ -1,19 +1,60 @@
 body{
-    margin:0;
-    background-image: url("farm.png");
-    display:flex;
-    background-size: cover;
-    background-position: center;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    font-family: "Segoe UI", Arial, sans-serif;
-}
-.sign-up{
-    background-color: aliceblue;
-    width: 420px;
-    padding: 60px 40px;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+margin:0;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background-image:url("farm.png");
+background-size:cover;
+font-family:"Segoe UI",Arial;
 }
 
+.sign-up{
+width:420px;
+background:rgba(255,255,255,0.9);
+padding:50px;
+border-radius:15px;
+box-shadow:0 10px 30px rgba(0,0,0,0.25);
+}
+
+.title{
+text-align:center;
+color:#2e7d32;
+margin-bottom:25px;
+}
+
+input,textarea{
+
+width:100%;
+padding:10px;
+margin:8px 0 18px;
+border-radius:6px;
+border:1px solid #a5c8a5;
+}
+
+button{
+
+width:100%;
+padding:12px;
+border:none;
+border-radius:8px;
+background:linear-gradient(135deg,#2e7d32,#7e9c64);
+color:white;
+font-weight:bold;
+cursor:pointer;
+}
+
+button:hover{
+box-shadow:0 6px 15px rgba(46,125,50,0.4);
+}
+
+.error{
+color:red;
+font-size:13px;
+}
+
+#strength{
+font-size:12px;
+margin-top:-10px;
+margin-bottom:10px;
+}

@@ -1,33 +1,47 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>
-            sign-up
-        </title>
-        <link rel="stylesheet" href="sign_up.css">
-    </head>
-    <body>
-       <div class="sign-up">
-       <h2 style="text-align:center; color:#2e7d32; margin-bottom:30px;">Farmer Client Signup</h2>
-       <form class="form">
-        <label>Enter your name</label>
-        <input type="text" required placeholder="Enter your name"><br>
 
-        <label>Enter date-of-birth</label>
-        <input type="date" required><br>
+<head>
+<title>Signup</title>
+<link rel="stylesheet" href="sign_up.css">
+<script defer src="signup.js"></script>
+</head>
 
-        <label>Enter eamil id</label>
-        <input type="email" placeholder="example@gmail.com" required><br>
+<body>
 
-        <label>Enter your Password</label>
-        <input type="password"  required><br>
+<div class="sign-up">
 
-        <label>Confirm password</label>
-        <input type="password" required><br>
+<h2 class="title">Farmer Client Signup</h2>
 
-        <label>Enter your address</label>
-        <textarea placeholder="Enter your address" rows="5" ></textarea>
-       </form>
-       </div>
-    </body>
+<form id="signupForm">
+
+<label>Name</label>
+<input type="text" id="name">
+
+<label>Date of Birth</label>
+<input type="date" id="dob">
+
+<label>Email</label>
+<input type="email" id="email">
+
+<label>Password</label>
+<input type="password" id="pass">
+
+<p id="strength"></p>
+
+<label>Confirm Password</label>
+<input type="password" id="confirm">
+
+<label>Address</label>
+<textarea rows="4"></textarea>
+
+<p id="error" class="error"></p>
+
+<button>Create Account</button>
+
+</form>
+
+</div>
+
+</body>
 </html>
